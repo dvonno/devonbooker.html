@@ -1,0 +1,118 @@
+body {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+
+
+}
+.list{text-align: center;
+
+
+}
+
+h1, h2, h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+}
+
+p1, p2, p3, p4 {
+    font-size: large;
+    color: red;
+}
+
+h1, h2, h3 { font-stretch: semi-condensed;
+    
+}
+img{
+    opacity:inherit;
+    text-align: center;
+    border-style: solid;
+    color: goldenrod;
+    border-width: 6px;
+   
+}
+body{
+    background-image: url(../images/skulls.png);
+}
+
+h1{
+    font-size: 54px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-family: 'Odibee Sans', cursive;
+    margin-bottom: 0;
+  }
+  
+  .carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 800px;
+    display: block;
+    margin: 50px auto ;
+    border: 2px solid #17b747;
+  }
+  
+  .carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .arrow{
+    border: solid #17b747;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+  }
+  .arrow-prev {
+    left: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(135deg);
+  
+  }
+  .arrow-next {
+    right: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  
+  [id^= "item"] {
+    display: none;
+  }
+  .item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('../images/skulls.png') ;
+    background-size: contain;
+  }
+  .item-2 {
+    background: url('../images/IPHONE_13-2\ \(1\).jpg') ;
+    background-size: contain;
+  }
+  .item-3 {
+    background: url('../images/10785885760_IMG_3782.JPG');
+    background-size: cover;
+}
+  
+  *:target ~ .item-1{
+    opacity: 0;
+  }
+  #item-1:target ~ .item-1 {
+    opacity: 1;
+  
+  }
+  #item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+  } 
+  .image-gallary{
+    display: block;
+  }
